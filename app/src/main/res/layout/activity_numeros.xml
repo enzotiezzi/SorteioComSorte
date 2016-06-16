@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.primos.sorteiocomsorte.NumerosActivity"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Números sugeridos"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero2"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero3"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero4"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero5"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textViewNumero6"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/text"
+            android:background="@drawable/moldura"
+            android:width="@dimen/moldura_width"
+            android:height="@dimen/moldura_height"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gerar novos números"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView3"/>
+</LinearLayout>
