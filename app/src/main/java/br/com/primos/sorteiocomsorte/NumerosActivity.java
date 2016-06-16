@@ -3,6 +3,7 @@ package br.com.primos.sorteiocomsorte;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ public class NumerosActivity extends AppCompatActivity
     private TextView textViewNumero5;
     private TextView textViewNumero6;
 
+    private TextView textViewGerarNovosNumeros;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -29,7 +32,15 @@ public class NumerosActivity extends AppCompatActivity
         textViewNumero4 = (TextView) findViewById(R.id.textViewNumero4);
         textViewNumero5 = (TextView) findViewById(R.id.textViewNumero5);
         textViewNumero6 = (TextView) findViewById(R.id.textViewNumero6);
+        textViewGerarNovosNumeros = (TextView) findViewById(R.id.textViewGerarNovosNumeros);
 
+        textViewGerarNovosNumeros.setOnClickListener(textViewGerarNovosNumeros_click);
+
+        sortear();
+    }
+
+    private void sortear()
+    {
         Sorteador sorteador = new Sorteador();
 
         int[] numeros = sorteador.sortear();
@@ -41,4 +52,13 @@ public class NumerosActivity extends AppCompatActivity
         textViewNumero5.setText(String.valueOf(numeros[4]));
         textViewNumero6.setText(String.valueOf(numeros[5]));
     }
+
+    View.OnClickListener textViewGerarNovosNumeros_click = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+            sortear();
+        }
+    };
 }
